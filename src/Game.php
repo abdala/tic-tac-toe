@@ -31,8 +31,15 @@ final class Game implements MoveInterface
         }
 
         $position = $this->nextPosition($availablePositions);
+        $playerUnit = $playerUnit === PlayerUnit::O ? PlayerUnit::X : PlayerUnit::O;
 
-        $position[] = $playerUnit === PlayerUnit::O ? PlayerUnit::X : PlayerUnit::O;
+        $boardState[$position[0]][$position[1]] = $playerUnit;
+
+        if ($this->boardState->hasWinner($boardState, $playerUnit)) {
+            throw new GameOverException(); 
+        }
+
+        $position[] = $playerUnit; 
 
         return $position;
     }
