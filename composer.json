@@ -1,0 +1,23 @@
+{
+    "name": "abdala/tic-tac-toe",
+    "description": "Simple tic-tac-toe game",
+    "license": "GPL-3.0",
+    "require": {
+        "php": "^7.1",
+        "webmozart/assert": "^1.2",
+        "commerceguys/enum": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    },
+    "autoload": {
+       "psr-4": {
+            "Game\\": "src/"
+       } 
+    },
+    "autoload-dev": {
+       "psr-4": {
+            "GameTest\\": "tests/"
+       } 
+    }
+}

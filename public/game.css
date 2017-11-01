@@ -1,0 +1,17 @@
+html,body{text-align:center;}
+
+.clear{clear:both;}
+.square{float: left;width:100px; height:100px; font-size: 4rem;}
+
+#game{width: 310px; margin: auto;}
+
+#square_0_0{border-bottom: 3px solid black; border-right: 3px solid black;}
+#square_0_1{border-bottom: 3px solid black;}
+#square_0_2{border-bottom: 3px solid black; border-left: 3px solid black;}
+
+#square_1_1{border-right: 3px solid black; border-left: 3px solid black;}
+
+#square_2_0{border-top: 3px solid black; border-right: 3px solid black;}
+#square_2_1{border-top: 3px solid black;}
+#square_2_2{border-top: 3px solid black; border-left: 3px solid black;}
+
